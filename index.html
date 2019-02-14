@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <link href="style.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <title>regextract</title>
+
+</head>
+
+<body>
+    <div id="parent" class="d-flex flex-column justify-content-around align-items-center border border-primary">
+        <div id="entry" class="d-flex flex-row justify-content-between align-items-center">
+            <textarea id="raw-text" class="border border-dark">
+            </textarea>
+            <div id="input-wrapper" class="d-flex flex-column justify-content-around align-items-center">
+                <select id="module-select" class="text-center">
+                    <option value="module1">module1</option>
+                    <option value="module2">module2</option>
+                    <option value="module3">module3</option>
+                    <option value="module5">module4</option>
+                    <option value="module6">module5</option>
+                    <option value="module6">module6</option>
+                    <option value="cp">cp</option>
+                </select>
+                <button id="submit" class="btn btn-small btn-primary">Regex</button>
+                <button id="reset" class="btn btn-small btn-warning">Clear</button>
+            </div>
+        </div>
+        <div id="result" class="border border-dark">
+
+        </div>
+    </div>
+    <script src="script.js"></script>
+
+</body>
+
+</html>
