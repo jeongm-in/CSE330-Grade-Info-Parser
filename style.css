@@ -4,6 +4,7 @@
 }
 
 body {
+    background-color: #EEE;
     width: 100%;
     height: 100%;
     position: absolute;
@@ -14,6 +15,7 @@ body {
 }
 
 #parent {
+    background-color:#FFF;
     width: 60vw;
     height: 80vh;
 }

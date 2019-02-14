@@ -1,6 +1,11 @@
 
 
-document.getElementById('submit').addEventListener('click', (e) => {
+document.getElementById('raw-text').addEventListener('change', (e)=>{
+    parse();
+}, false);
+
+let parse = () => {
+    document.getElementById('result').innerHTML = '';
     const inputText = document.getElementById('raw-text').value;
     const thisModule = document.getElementById('module-select').value;
     let matchedText = match(inputText, thisModule);
@@ -11,8 +16,11 @@ document.getElementById('submit').addEventListener('click', (e) => {
     }
     document.getElementById('result').innerHTML = stuff;
 
+}
 
-}, false);
+document.getElementById('module-select').addEventListener('change', (e)=>{
+    parse();
+},false);
 
 document.getElementById('reset').addEventListener('click', (e) => {
     document.getElementById('result').innerHTML = '';
